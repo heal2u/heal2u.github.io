@@ -18,7 +18,7 @@ layout: none
 
   <script type="text/javascript">
 
-		d3.json("/data/2019-short.json", function(error, data) {
+		d3.json("/data/year.json", function(error, data) {
 			// UK Election Results Source: http://www.ukpolitical.info/2015.htm
 			var chart = d3.ez.chart.barChartStacked()
 				.yAxisLabel("Minutes")
