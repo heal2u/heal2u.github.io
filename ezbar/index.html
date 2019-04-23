@@ -19,9 +19,10 @@ title: my work style for this year -  stacked-bar-chart
 
   <script type="text/javascript">
 
-		d3.json("/data/uk_elections.json", function(error, data) {
+		d3.json("/data/uk_elections.json").then(function(data) {
             console.log(data);
-			var chart = d3.ez.chart.barChartVertical().colors(d3.ez.palette.categorical(1));
+            var colors = ["#cc0000", "#3366cc", "#ff9900", "#ffcc00", "#03cc14", "#ff18c0"];
+			var chart = d3.ez.chart.barChartVertical().colors(colors);
 			var legend = d3.ez.component.legend().title("Top 10");
 			var title = d3.ez.component.title().mainText("My Work Style").subText("since 2019 - ");
 
