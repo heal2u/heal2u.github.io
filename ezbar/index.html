@@ -1,0 +1,39 @@
+---
+layout: default
+title: my work style for this year -  stacked-bar-chart
+---
+<script src="//d3js.org/d3.v4.min.js"></script>
+  <div id="chartholder"></div>
+  <br/>
+  <div>Value: <span id="message"></span></div>
+
+  <script type="text/javascript">
+
+		d3.json("/data/month.json", function(error, data) {
+			// UK Election Results Source: http://www.ukpolitical.info/2015.htm
+			var chart = d3.ez.chart.barChartHorizontal()
+				.yAxisLabel("Minutes")
+				.colors(['#c00', '#f0c', '#f90', '#fc0' ,'#a50', '#a0c', '#a90', '#ac0' ,'#550', '#50c', '#590', '#5c0' ,'#d00' ]);
+			var legend = d3.ez.component.legend().title("Party");
+			var title = d3.ez.component.title().mainText("My Work Style").subText("since 2019 - ");
+
+			// Create chart base
+			var myChart = d3.ez()
+				.width(1200)
+				.height(500)
+				.chart(chart)
+				.legend(legend)
+				.title(title)
+				.on("customValueMouseOver", function(d, i) {
+					d3.select("#message").text(d.value);
+				});
+
+			// Add to page
+			d3.select("#chartholder")
+				.datum(data)
+				.call(myChart);
+		});
+
+  </script>
+
+
