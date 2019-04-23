@@ -19,7 +19,7 @@ title: my work style for this year -  stacked-bar-chart
 
   <script type="text/javascript">
 
-		d3.json("/data/uk_elections.json").then(function(data) {
+		d3.json("/data/month.json").then(function(data) {
             console.log(data);
             var colors = ["#cc0000", "#3366cc", "#ff9900", "#ffcc00", "#03cc14", "#ff18c0"];
 			var chart = d3.ez.chart.barChartVertical().colors(colors);
@@ -39,7 +39,7 @@ title: my work style for this year -  stacked-bar-chart
 
 			// Add to page
 			d3.select("#chartholder")
-				.datum(data[1])
+				.datum(data[0])
 				.call(myChart);
 		});
 
