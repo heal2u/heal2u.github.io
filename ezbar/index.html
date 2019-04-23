@@ -13,8 +13,8 @@ title: my work style for this year -  stacked-bar-chart
 			// UK Election Results Source: http://www.ukpolitical.info/2015.htm
 			var chart = d3.ez.chart.barChartVertical()
 				.yAxisLabel("Minutes")
-				.colors(['#c00', '#f0c', '#f90', '#fc0' ,'#a50', '#a0c', '#a90', '#ac0' ,'#550', '#50c', '#590', '#5c0' ,'#d00' ]);
-			var legend = d3.ez.component.legend().title("Party");
+				.colors(d3.ez.palette.categorical(1));
+			var legend = d3.ez.component.legend().title("Top 10");
 			var title = d3.ez.component.title().mainText("My Work Style").subText("since 2019 - ");
 
 			// Create chart base
