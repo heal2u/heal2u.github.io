@@ -11,7 +11,7 @@ title: my work style for this year -  stacked-bar-chart
 
 		d3.json("/data/month.json", function(error, data) {
 			// UK Election Results Source: http://www.ukpolitical.info/2015.htm
-			var chart = d3.ez.chart.barChartHorizontal()
+			var chart = d3.ez.chart.barChartVertical()
 				.yAxisLabel("Minutes")
 				.colors(['#c00', '#f0c', '#f90', '#fc0' ,'#a50', '#a0c', '#a90', '#ac0' ,'#550', '#50c', '#590', '#5c0' ,'#d00' ]);
 			var legend = d3.ez.component.legend().title("Party");
