@@ -12,8 +12,9 @@ title: my work style for this year -  stacked-bar-chart
   <script type="text/javascript">
 
 		d3.json("/data/month.json", function(error, data) {
+            console.log(data);
 			var chart = d3.ez.chart.barChartVertical()
-				.yAxisLabel("Minutes")
+				.yAxisLabel("T_T_T")
 				.colors(d3.ez.palette.categorical(1));
 			var legend = d3.ez.component.legend().title("Top 10");
 			var title = d3.ez.component.title().mainText("My Work Style").subText("since 2019 - ");
