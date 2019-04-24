@@ -191,15 +191,15 @@
       },
       {
         "key": "calendar",
-        "value": 120
+        "value": 134
       },
       {
         "key": "code",
-        "value": 1395
+        "value": 1665
       },
       {
         "key": "email",
-        "value": 660
+        "value": 795
       },
       {
         "key": "github",
@@ -207,7 +207,7 @@
       },
       {
         "key": "learningnet",
-        "value": 330
+        "value": 390
       },
       {
         "key": "management",
@@ -215,11 +215,11 @@
       },
       {
         "key": "meeting",
-        "value": 930
+        "value": 1050
       },
       {
         "key": "opensource",
-        "value": 30
+        "value": 60
       },
       {
         "key": "preparation",
@@ -231,15 +231,15 @@
       },
       {
         "key": "scrum",
-        "value": 20
+        "value": 110
       },
       {
         "key": "seminar",
-        "value": 30
+        "value": 570
       },
       {
         "key": "somedaytalk",
-        "value": 270
+        "value": 314
       }
     ]
   }
